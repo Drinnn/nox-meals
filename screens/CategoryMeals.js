@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Platform, StyleSheet, Text, View } from "react-native";
-import colors from "../constants/colors";
+import { Button, StyleSheet, Text, View } from "react-native";
 import { CATEGORIES } from "../data/dummy-data";
 
 const CategoryMeals = (props) => {
@@ -32,10 +31,6 @@ CategoryMeals.navigationOptions = (navigationData) => {
 
   return {
     headerTitle: selectedCategory.title,
-    headerStyle: {
-      backgroundColor: Platform.OS === "android" ? colors.primary : "",
-    },
-    headerTintColor: Platform.OS === "android" ? "white" : colors.primary,
   };
 };
 

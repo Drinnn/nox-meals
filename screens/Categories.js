@@ -1,13 +1,11 @@
 import React from "react";
 import {
   FlatList,
-  Platform,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from "react-native";
-import colors from "../constants/colors";
 
 import { CATEGORIES } from "../data/dummy-data";
 
@@ -35,14 +33,6 @@ const Categories = (props) => {
   return (
     <FlatList data={CATEGORIES} numColumns={2} renderItem={renderGridItem} />
   );
-};
-
-Categories.navigationOptions = {
-  headerTitle: "Meal Categories",
-  headerStyle: {
-    backgroundColor: Platform.OS === "android" ? colors.primary : "",
-  },
-  headerTintColor: Platform.OS === "android" ? "white" : colors.primary,
 };
 
 const styles = StyleSheet.create({
