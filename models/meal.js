@@ -4,6 +4,7 @@ class Meal {
     categoriesId,
     title,
     affordability,
+    complexity,
     imageUrl,
     duration,
     ingredients,
@@ -17,6 +18,7 @@ class Meal {
     this.categoriesId = categoriesId;
     this.title = title;
     this.affordability = affordability;
+    this.complexity = complexity;
     this.imageUrl = imageUrl;
     this.duration = duration;
     this.ingredients = ingredients;
@@ -27,3 +29,5 @@ class Meal {
     this.isLactoseFree = isLactoseFree;
   }
 }
+
+export default Meal;
